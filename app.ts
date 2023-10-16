@@ -57,11 +57,10 @@ app.use(
 );
 
 // UI
-app.use(express.static("src"));
-
-app.use("/ui", (req: Request, res: Response) => {
-  res.sendFile("index.html", { root: "src" });
-});
+app.use("/ui", express.static("src"));
+// app.use("/ui", (req: Request, res: Response) => {
+//   res.sendFile("index.html", { root: "src" });
+// });
 
 // routes
 app.use("/", authRouter);
