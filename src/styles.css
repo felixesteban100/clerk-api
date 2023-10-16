@@ -1,15 +1,16 @@
 
 body{
-    background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page{
-    background-color: white;
+    background-color: black;
     text-align: center;
 }
 
 .title{
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 800;
+    color: white;
 }
