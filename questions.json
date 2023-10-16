@@ -1,0 +1,94 @@
+[
+    {
+      "answerSelected": "",
+      "category": "React",
+      "type": "Multiple Choice",
+      "difficulty": "Easy",
+      "question": "What is React?",
+      "correct_answer": "A JavaScript library for building user interfaces",
+      "incorrect_answers": [
+        "A programming language",
+        "A database management system",
+        "A web browser"
+      ],
+      "all_answers": [
+        "A JavaScript library for building user interfaces",
+        "A programming language",
+        "A database management system",
+        "A web browser"
+      ],
+      "createdBy": "ObjectId1"
+    },
+    {
+      "answerSelected": "",
+      "category": "React",
+      "type": "True/False",
+      "difficulty": "Medium",
+      "question": "React is a front-end JavaScript framework.",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"],
+      "all_answers": ["True", "False"],
+      "createdBy": "ObjectId2"
+    },
+    {
+      "answerSelected": "",
+      "category": "React",
+      "type": "Multiple Choice",
+      "difficulty": "Intermediate",
+      "question": "What is JSX in React?",
+      "correct_answer": "A syntax extension for JavaScript",
+      "incorrect_answers": [
+        "A new programming language",
+        "A React-specific library",
+        "A CSS preprocessor"
+      ],
+      "all_answers": [
+        "A syntax extension for JavaScript",
+        "A new programming language",
+        "A React-specific library",
+        "A CSS preprocessor"
+      ],
+      "createdBy": "ObjectId3"
+    },
+    {
+      "answerSelected": "",
+      "category": "React",
+      "type": "Multiple Choice",
+      "difficulty": "Easy",
+      "question": "Which React method is called after a component is rendered for the first time?",
+      "correct_answer": "componentDidMount",
+      "incorrect_answers": [
+        "componentWillUnmount",
+        "render",
+        "componentWillUpdate"
+      ],
+      "all_answers": [
+        "componentDidMount",
+        "componentWillUnmount",
+        "render",
+        "componentWillUpdate"
+      ],
+      "createdBy": "ObjectId4"
+    },
+    {
+      "answerSelected": "",
+      "category": "React",
+      "type": "Multiple Choice",
+      "difficulty": "Intermediate",
+      "question": "What is React Router used for?",
+      "correct_answer": "Handling routing and navigation in React applications",
+      "incorrect_answers": [
+        "Managing state in React components",
+        "Styling React components",
+        "Optimizing React performance"
+      ],
+      "all_answers": [
+        "Handling routing and navigation in React applications",
+        "Managing state in React components",
+        "Styling React components",
+        "Optimizing React performance"
+      ],
+      "createdBy": "ObjectId5"
+    }
+  ]
+  
