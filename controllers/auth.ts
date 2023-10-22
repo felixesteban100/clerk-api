@@ -3,7 +3,7 @@ import { StatusCodes } from "http-status-codes";
 import axios from "axios";
 
 async function fetchClerkApi(req: Request, res: Response) {
-  const { userId, clerkSecretKey, apiYoutubeKey, typeOfDATATOFETCH } = req.query;
+  const { userId, clerkSecretKey, apiYoutubeKey, typeOfDATATOFETCH, nextPageToken } = req.query;
 
   const urlClerkApi: string = `https://api.clerk.com/v1/users/${userId}/oauth_access_tokens/oauth_google`;
   const responseClerkApi = await axios.get(urlClerkApi, {
@@ -32,6 +32,16 @@ async function fetchClerkApi(req: Request, res: Response) {
       });
 
       return res.status(StatusCodes.OK).json(responseYoutubeApiPlaylists.data);
+
+    case "likedVideos":
+      const urlYoutubeApiLikedVideos: string = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics%2Cplayer&maxResults=50&myRating=like${!!nextPageToken && nextPageToken !== "" ? `&pageToken=${nextPageToken}` : ""}&key=${apiYoutubeKey}`;
+      const responseYoutubeApiLikedVideos = await axios.get(urlYoutubeApiLikedVideos, {
+        headers: {
+          Authorization: `Bearer ${responseClerkApi.data[0].token}`,
+        },
+      });
+
+      return res.status(StatusCodes.OK).json(responseYoutubeApiLikedVideos.data);
   }
 }
 
